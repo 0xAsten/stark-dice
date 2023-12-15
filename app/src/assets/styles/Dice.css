@@ -1,0 +1,38 @@
+.dice-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.dice-image {
+	width: 150px;
+	height: 200px;
+	transition: transform 1s;
+}
+
+.animate {
+	animation: rollDice 1s infinite;
+}
+
+@keyframes rollDice {
+	0% {
+		transform: translateY(0) rotate(0deg);
+	}
+
+	50% {
+		transform: translateY(-20px) rotate(180deg);
+	}
+
+	100% {
+		transform: translateY(0) rotate(360deg);
+	}
+}
+
+button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 1em;
+	cursor: pointer;
+}

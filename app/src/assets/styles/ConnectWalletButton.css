@@ -1,0 +1,45 @@
+.connect-wallet-button {
+	position: absolute;
+	top: 20px;
+	/* Adjust as needed for your layout */
+	right: 20px;
+	/* Adjust as needed for your layout */
+	padding: 10px 20px;
+	border: none;
+	background-color: rgba(0, 123, 255, 0.7);
+	/* Blue, translucent background */
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	/* This will help achieve the 'ice' effect */
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	/* Slight white border for the 'crackled' effect */
+	/* Add more styling for the 'crackled ice' effect as needed */
+}
+
+.connect-wallet-button:hover {
+	background-color: rgba(0, 123, 255, 0.8);
+	/* Slightly darker on hover */
+}
+
+.connect-wallet-button:active {
+	background-color: rgba(0, 123, 255, 0.6);
+	/* Slightly lighter on click */
+}
+
+.connect-wallet-button {
+	/* your existing styles */
+	transition: background-color 0.3s, color 0.3s;
+	/* Smooth transition for color and background */
+}
+
+
+/* Hover effect for disconnecting */
+.connect-wallet-button.connected:hover {
+	background-color: rgb(223, 160, 160);
+	/* Color indicating disconnect on hover */
+	color: white;
+}
